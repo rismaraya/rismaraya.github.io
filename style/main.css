@@ -5,6 +5,11 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 section,
@@ -41,16 +46,21 @@ h2 {
   border: 3px solid #198754;
 }
 
-.jumbotron p {
-  font-size: 16px;
-  transition: 1s;
-}
-
 .jumbotron h2,
 .jumbotron p {
   text-shadow: 1px 1px 1px black;
   text-align: center;
   color: #eaeaea;
+}
+
+.jumbotron h2:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.jumbotron p {
+  font-size: 16px;
+  transition: 1s;
 }
 
 .jumbotron p:hover {
