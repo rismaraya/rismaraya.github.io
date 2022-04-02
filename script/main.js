@@ -1,5 +1,5 @@
-const alert = document.querySelector('.errorAlert');
-alert.addEventListener('click', function () {
+const alertError = document.querySelector('.alert-e');
+alertError.addEventListener('click', function () {
   Swal.fire({
     icon: 'error',
     title: 'Akses Gagal !',
@@ -7,9 +7,9 @@ alert.addEventListener('click', function () {
   });
 });
 
-const alert2 = document.querySelectorAll('.errorAlert2');
-for (let i = 0; i < alert2.length; i++) {
-  alert2[i].addEventListener('click', function () {
+const alertError2 = document.querySelectorAll('.alert-e2');
+for (let i = 0; i < alertError2.length; i++) {
+  alertError2[i].addEventListener('click', function () {
     Swal.fire({
       icon: 'error',
       title: 'Akses Gagal !',
