@@ -56,7 +56,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <h2 class="display-4" data-aos="fade-right">MTQ Batu Taba 1443H</h2>
+          <h2 class="display-4">MTQ Batu Taba 1443H</h2>
           <p></p>
         </div>
       </div>
@@ -216,7 +216,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>            
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -256,6 +256,7 @@
       gsap.registerPlugin(TextPlugin);
       gsap.to('.jumbotron p', { duration: 3, delay: 1, text: 'Batu Taba | Batipuh Selatan | Tanah Datar' });
       gsap.from('.jumbotron img', { duration: 2, y: -100, rotateY: 360, opacity: 0, ease: 'bounce' });
+      gsap.from('.jumbotron h2', { duration: 3, x: 500, rotateY: 360, opacity: 0, ease: 'back.out' });
     </script>
 
     <!-- sweeetAlert -->
