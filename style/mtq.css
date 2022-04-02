@@ -240,6 +240,6 @@ footer a {
 }
 
 footer a:hover {
-  color: gold;
+  color: #198754;
   text-shadow: 0.5px 0.5px 3px #e2edff, -0.5px -0.5px 3px #e2edff;
 }
