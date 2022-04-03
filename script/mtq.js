@@ -49,7 +49,7 @@ for (let i = 0; i < iconLink.length; i++) {
   iconLink[i].classList.add('fa', 'fa-link');
 }
 
-// sweetalert 
+// sweetalert
 const alertError = document.querySelectorAll('.alert-e');
 for (let i = 0; i < alertError.length; i++) {
   alertError[i].addEventListener('click', function () {
