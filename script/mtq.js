@@ -19,14 +19,13 @@ iconOverlay[2].classList.add('fa', 'fa-telegram');
 const iconNavbar = document.querySelectorAll('a.nav-link');
 iconNavbar[0].classList.add('fa', 'fa-home');
 iconNavbar[1].classList.add('fa', 'fa-file-pdf-o');
-iconNavbar[2].classList.add('fa', 'fa-calendar');
-iconNavbar[3].classList.add('fa', 'fa-file-text-o');
-iconNavbar[4].classList.add('fa', 'fa-map-marker');
-iconNavbar[5].classList.add('fa', 'fa-chevron-circle-down');
+iconNavbar[2].classList.add('fa', 'fa-file-text-o');
+iconNavbar[3].classList.add('fa', 'fa-map-marker');
+iconNavbar[4].classList.add('fa', 'fa-chevron-circle-down');
 
-const iconTimeLine = document.querySelectorAll('.timeline');
+const iconTimeLine = document.querySelectorAll('.fileUndangan');
 for (let i = 0; i < iconTimeLine.length; i++) {
-  iconTimeLine[i].classList.add('fa', 'fa-calendar');
+  iconTimeLine[i].classList.add('fa', 'fa-file-pdf-o');
 }
 
 const iconMap = document.querySelectorAll('.map');
