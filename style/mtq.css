@@ -1,3 +1,8 @@
+:root {
+  --warna-hijau: #198754;
+  --warna-putih: rgba(255, 255, 0, 0.589);
+}
+
 section,
 .container {
   overflow: hidden;
@@ -6,7 +11,7 @@ section,
 .type1 h2,
 .type1 p {
   text-align: center;
-  color: #eaeaea;
+  color: var(--warna-putih);
 }
 
 .type2 h2,
@@ -25,20 +30,24 @@ nav {
   display: inline-block;
 }
 
+section nav.navbar {
+  background-color: var(--warna-putih);
+}
+
 .navbar a {
-  background-color: #198754;
-  color: #e2edff;
+  background-color: var(--warna-hijau);
+  color: var(--warna-putih);
   padding: 10px;
   margin: 2px;
   border-radius: 5px;
 }
 .navbar a:hover {
-  background-color: #198754;
+  background-color: var(--warna-hijau);
 }
 
 nav .container .navbar-brand {
   transition: 0.3s;
-  color: #e2edff;
+  color: var(--warna-putih);
   padding: 10px;
   margin: 2px;
   text-decoration: none;
@@ -48,12 +57,12 @@ nav .container .navbar-brand {
 
 nav .container .navbar-brand:hover {
   transition: 0.3s;
-  color: #198754;
-  text-shadow: 0.5px 0.5px 3px #e2edff, -0.5px -0.5px 3px #e2edff;
+  color: var(--warna-hijau);
+  text-shadow: 0.5px 0.5px 3px var(--warna-putih), -0.5px -0.5px 3px var(--warna-putih);
 }
 
 nav .nav-link {
-  background-color: #e2edff;
+  background-color: var(--warna-putih);
   padding: 10px;
   margin: 2px;
   text-decoration: none;
@@ -70,7 +79,7 @@ nav .nav-link {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #198754;
+  background-color: var(--warna-hijau);
   overflow: hidden;
   transition: 0.3s;
   padding-top: 60px;
@@ -80,7 +89,7 @@ nav .nav-link {
 .sidenav a {
   text-decoration: none;
   font-size: 25px;
-  color: #eaeaea;
+  color: var(--warna-putih);
   display: block;
   transition: 0.3s;
   text-align: left;
@@ -88,8 +97,8 @@ nav .nav-link {
 
 .sidenav a:hover {
   margin-left: 1rem;
-  color: #198754;
-  text-shadow: 1px 1px 3px #e2edff, -1px -1px 3px #e2edff;
+  color: var(--warna-hijau);
+  text-shadow: 1px 1px 3px var(--warna-putih), -1px -1px 3px var(--warna-putih);
 }
 
 .sidenav .closebtn {
@@ -101,29 +110,29 @@ nav .nav-link {
 }
 
 #navbarNavAltMarkup a {
-  color: #198754;
+  color: var(--warna-hijau);
 }
 
 #navbarNavAltMarkup a:hover {
-  color: #e2edff;
+  color: var(--warna-putih);
 }
 
 /* JUMBOTRON */
 .jumbotron {
   padding-top: 6rem;
-  background-color: #198754;
+  background-color: var(--warna-hijau);
   text-align: center;
 }
 
 .jumbotron img {
   border-radius: 50%;
-  border: white solid 4px;
+  border: var(--warna-putih) solid 4px;
   width: 200px;
 }
 
 .jumbotron img:hover {
-  box-shadow: 0 0 8px 5px #e2edff;
-  border: 3px solid #198754;
+  box-shadow: 0 0 8px 5px var(--warna-putih);
+  border: 3px solid var(--warna-hijau);
 }
 
 .jumbotron p {
@@ -142,9 +151,13 @@ nav .nav-link {
 }
 
 /* MTQ */
+#MTQ {
+  background-color: var(--warna-putih);
+}
+
 #MTQ h2,
 #MTQ p {
-  color: #198754;
+  color: var(--warna-hijau);
   text-shadow: 0.2px 0.2px 0.2px black;
 }
 
@@ -164,19 +177,32 @@ nav .nav-link {
 
 /* syaratPeserta */
 #syaratPeserta {
-  background-color: #198754;
-  color: #e2edff;
+  background-color: var(--warna-hijau);
+  color: var(--warna-putih);
 }
 
 #syaratPeserta h2,
 #syaratPeserta h5,
 #syaratPeserta p {
   text-align: center;
+  line-height: normal;
+}
+
+#syaratPeserta p {
+  background-color: var(--warna-putih);
+  color: var(--warna-hijau);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* HADIAH MTQ */
+#hadiahMTQ {
+  background-color: var(--warna-putih);
 }
 
 /* MTQBatuTaba */
 #MTQBatuTaba {
-  background-color: #198754;
+  background-color: var(--warna-hijau);
 }
 
 #MTQBatuTaba h2 {
@@ -189,7 +215,7 @@ nav .nav-link {
 }
 
 #MTQBatuTaba .col-md-5 {
-  background-color: white;
+  background-color: var(--warna-putih);
   border-radius: 10px;
   padding: 1rem;
   margin: 15px;
@@ -199,7 +225,7 @@ nav .nav-link {
   text-align: center;
   font-size: 80px;
   margin-bottom: 1rem;
-  color: #eaeaea;
+  color: var(--warna-putih);
 }
 
 #MTQBatuTaba i,
@@ -209,7 +235,7 @@ nav .nav-link {
 }
 
 #MTQBatuTaba a {
-  box-shadow: 0 0 5px 1px #eaeaea;
+  box-shadow: 0 0 5px 1px var(--warna-putih);
 }
 
 /* hadiahMTQ */
@@ -217,27 +243,31 @@ nav .nav-link {
 #hadiahMTQ h5,
 #hadiahMTQ p {
   text-align: center;
-  color: #198754;
+  color: var(--warna-hijau);
   text-shadow: 0.2px 0.2px 0.2px black;
 }
 
 /* QnA */
+#QnA {
+  background-color: var(--warna-putih);
+}
+
 #QnA h2,
 #QnA p {
-  color: #198754;
+  color: var(--warna-hijau);
   text-shadow: 0.2px 0.2px 0.2px black;
 }
 
 #hiddenFlyButton a:hover {
-  background-color: #e2edff;
-  color: #198754;
-  box-shadow: 0 0 2px 1px #198754;
+  background-color: var(--warna-putih);
+  color: var(--warna-hijau);
+  box-shadow: 0 0 2px 1px var(--warna-hijau);
 }
 
 /* Sponsor */
 #sponsor {
-  background-color: #198754;
-  color: #e2edff;
+  background-color: var(--warna-hijau);
+  color: var(--warna-putih);
 }
 
 #sponsor h2 {
@@ -259,8 +289,8 @@ nav .nav-link {
 
 /* FOOTER */
 footer {
-  color: #198754;
-  background-color: #fff;
+  color: var(--warna-hijau);
+  background-color: var(--warna-putih);
   text-align: center;
   padding-bottom: 4rem;
   /* text-shadow: 0.3px 0.3px 0.3px black; */
@@ -269,11 +299,11 @@ footer {
 footer a {
   transition: 0.5s;
   text-decoration: none;
-  color: #198754;
+  color: var(--warna-hijau);
   font-weight: bold;
 }
 
 footer a:hover {
-  color: #e2edff;
-  text-shadow: 0.5px 0.5px 3px #198754, -0.5px -0.5px 3px #198754
+  color: var(--warna-putih);
+  text-shadow: 0.5px 0.5px 3px var(--warna-hijau), -0.5px -0.5px 3px var(--warna-hijau);
 }

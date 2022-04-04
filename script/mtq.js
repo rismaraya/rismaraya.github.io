@@ -1,28 +1,3 @@
-// .navbar -sub: overlauy
-function openNav() {
-  document.getElementById('mySidenav').style.width = '250px';
-}
-function closeNav() {
-  document.getElementById('mySidenav').style.width = '0';
-}
-
-// ----------------------------------------------------------------
-
-// -sub: icon
-document.querySelector('a.navbar-brand i').classList.add('fa', 'fa-user-circle');
-
-const iconOverlay = document.querySelectorAll('#mySidenav i');
-iconOverlay[0].classList.add('fa', 'fa-times-circle-o');
-iconOverlay[1].classList.add('fa', 'fa-whatsapp');
-iconOverlay[2].classList.add('fa', 'fa-telegram');
-
-const iconNavbar = document.querySelectorAll('a.nav-link');
-iconNavbar[0].classList.add('fa', 'fa-home');
-iconNavbar[1].classList.add('fa', 'fa-file-pdf-o');
-iconNavbar[2].classList.add('fa', 'fa-file-text-o');
-iconNavbar[3].classList.add('fa', 'fa-map-marker');
-iconNavbar[4].classList.add('fa', 'fa-chevron-circle-down');
-
 const iconTimeLine = document.querySelectorAll('.fileUndangan');
 for (let i = 0; i < iconTimeLine.length; i++) {
   iconTimeLine[i].classList.add('fa', 'fa-file-pdf-o');
