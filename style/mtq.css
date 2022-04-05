@@ -3,14 +3,19 @@
   --color-a1: rgba(255, 255, 0, 0.589);
   --background-b1: #eaeaea;
   --color-b1: rgba(53, 53, 8, 0.589);
+
+  --background-a2: #570743;
+  --color-a2: rgba(21, 255, 0, 0.589);
+  --background-b2: #b47b7b;
+  --color-b2: rgba(20, 20, 18, 0.589);
 }
 
+/* ---------- warna 1 */
 .container-a1 {
   background-color: var(--background-a1);
   color: var(--color-a1);
   margin: 0.2rem;
 }
-
 .container-b1 {
   background-color: var(--background-b1);
   color: var(--color-b1);
@@ -18,27 +23,23 @@
 }
 
 /* tag a */
-
 .container-a1 a {
   font-weight: 600;
   text-shadow: 0.2px 0.2px 0.2px var(--background-b1);
   border-radius: 5px;
   box-shadow: 2px 2px 5px var(--background-b1);
 }
-
 .container-a1 a:hover {
   background-color: var(--background-b1);
   color: var(--color-b1);
   box-shadow: 2px 2px 5px var(--color-b1), -2px -2px 5px var(--color-b1);
 }
-
 .container-b1 a {
   font-weight: 600;
   text-shadow: 0.2px 0.2px 0.2px var(--background-a1);
   border-radius: 5px;
   box-shadow: 2px 2px 5px var(--background-a1);
 }
-
 .container-b1 a:hover {
   background-color: var(--background-a1);
   color: var(--color-a1);
@@ -50,6 +51,60 @@
   color: var(--background-b1);
   text-shadow: 2px 2px 5px var(--color-b1);
 }
+
+.container-b1 i {
+  color: var(--background-a1);
+  text-shadow: 2px 2px 5px var(--color-a1);
+}
+
+/* ---------- warna 2 */
+.container-a2 {
+  background-color: var(--background-a2);
+  color: var(--color-a2);
+  margin: 0.2rem;
+}
+.container-b2 {
+  background-color: var(--background-b2);
+  color: var(--color-b2);
+  margin: 0.2rem;
+}
+
+/* tag a */
+.container-a2 a {
+  font-weight: 600;
+  text-shadow: 0.2px 0.2px 0.2px var(--background-b2);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px var(--background-b2);
+}
+.container-a2 a:hover {
+  background-color: var(--background-b2);
+  color: var(--color-b2);
+  box-shadow: 2px 2px 5px var(--color-b2), -2px -2px 5px var(--color-b2);
+}
+.container-b2 a {
+  font-weight: 600;
+  text-shadow: 0.2px 0.2px 0.2px var(--background-a2);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px var(--background-a2);
+}
+.container-b2 a:hover {
+  background-color: var(--background-a2);
+  color: var(--color-a2);
+  box-shadow: 2px 2px 5px var(--color-a2);
+}
+
+/* tag i */
+.container-a2 i {
+  color: var(--background-b2);
+  text-shadow: 2px 2px 5px var(--color-b2);
+}
+
+.container-b2 i {
+  color: var(--background-a2);
+  text-shadow: 2px 2px 5px var(--color-a2);
+}
+
+/* ----- HMTL */
 
 /* cover */
 #cover img {
