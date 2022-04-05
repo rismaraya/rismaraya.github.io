@@ -13,8 +13,13 @@ document.querySelector('a.navbar-brand i').classList.add('fa', 'fa-user-circle')
 
 const iconOverlay = document.querySelectorAll('#mySidenav i');
 iconOverlay[0].classList.add('fa', 'fa-times-circle-o');
-for (let i = 1; i < iconOverlay.length; i++){
+for (let i = 1; i < iconOverlay.length; i++) {
   iconOverlay[i].classList.add('fa', 'fa-whatsapp');
+}
+
+const WhatsApp = document.querySelectorAll('.icon-wa');
+for (let i = 0; i < WhatsApp.length; i++) {
+  WhatsApp[i].classList.add('fa', 'fa-whatsapp');
 }
 
 const iconNavbar = document.querySelectorAll('a.nav-link');
@@ -24,9 +29,9 @@ iconNavbar[2].classList.add('fa', 'fa-file-text-o');
 iconNavbar[3].classList.add('fa', 'fa-map-marker');
 iconNavbar[4].classList.add('fa', 'fa-chevron-circle-down');
 
-const iconTimeLine = document.querySelectorAll('.fileUndangan');
-for (let i = 0; i < iconTimeLine.length; i++) {
-  iconTimeLine[i].classList.add('fa', 'fa-file-pdf-o');
+const fileUndangan = document.querySelectorAll('.file-undangan');
+for (let i = 0; i < fileUndangan.length; i++) {
+  fileUndangan[i].classList.add('fa', 'fa-file-pdf-o');
 }
 
 const iconMap = document.querySelectorAll('.map');
