@@ -228,10 +228,8 @@ nav .nav-link {
   text-shadow: 0.2px 0.2px 0.2px black;
 }
 
-#hiddenFlyButton a:hover {
-  background-color: #e2edff;
-  color: #198754;
-  box-shadow: 0 0 2px 1px #198754;
+#QnA .container .icon-wa {
+  margin: 3px;
 }
 
 /* Sponsor */
@@ -275,5 +273,5 @@ footer a {
 
 footer a:hover {
   color: #e2edff;
-  text-shadow: 0.5px 0.5px 3px #198754, -0.5px -0.5px 3px #198754
+  text-shadow: 0.5px 0.5px 3px #198754, -0.5px -0.5px 3px #198754;
 }
