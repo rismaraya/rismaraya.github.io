@@ -1,309 +1,80 @@
 :root {
-  --warna-hijau: #198754;
-  --warna-putih: rgba(255, 255, 0, 0.589);
+  --background-a1: #198754;
+  --color-a1: rgba(255, 255, 0, 0.589);
+  --background-b1: #eaeaea;
+  --color-b1: rgba(53, 53, 8, 0.589);
 }
 
-section,
-.container {
-  overflow: hidden;
+.container-a1 {
+  background-color: var(--background-a1);
+  color: var(--color-a1);
+  margin: 0.2rem;
 }
 
-.type1 h2,
-.type1 p {
-  text-align: center;
-  color: var(--warna-putih);
+.container-b1 {
+  background-color: var(--background-b1);
+  color: var(--color-b1);
+  margin: 0.2rem;
 }
 
-.type2 h2,
-.type2 p {
-  text-align: center;
-}
+/* tag a */
 
-a {
-  text-decoration: none;
-}
-
-/* NAVBAR */
-nav {
-  text-align: center;
-  font-weight: bold;
-  display: inline-block;
-}
-
-section nav.navbar {
-  background-color: var(--warna-putih);
-}
-
-.navbar a {
-  background-color: var(--warna-hijau);
-  color: var(--warna-putih);
-  padding: 10px;
-  margin: 2px;
+.container-a1 a {
+  font-weight: 600;
+  text-shadow: 0.2px 0.2px 0.2px var(--background-b1);
   border-radius: 5px;
-}
-.navbar a:hover {
-  background-color: var(--warna-hijau);
+  box-shadow: 2px 2px 5px var(--background-b1);
 }
 
-nav .container .navbar-brand {
-  transition: 0.3s;
-  color: var(--warna-putih);
-  padding: 10px;
-  margin: 2px;
-  text-decoration: none;
+.container-a1 a:hover {
+  background-color: var(--background-b1);
+  color: var(--color-b1);
+  box-shadow: 2px 2px 5px var(--color-b1), -2px -2px 5px var(--color-b1);
+}
+
+.container-b1 a {
+  font-weight: 600;
+  text-shadow: 0.2px 0.2px 0.2px var(--background-a1);
   border-radius: 5px;
-  text-shadow: 0.5px 0.5px 0.5px black;
+  box-shadow: 2px 2px 5px var(--background-a1);
 }
 
-nav .container .navbar-brand:hover {
-  transition: 0.3s;
-  color: var(--warna-hijau);
-  text-shadow: 0.5px 0.5px 3px var(--warna-putih), -0.5px -0.5px 3px var(--warna-putih);
+.container-b1 a:hover {
+  background-color: var(--background-a1);
+  color: var(--color-a1);
+  box-shadow: 2px 2px 5px var(--color-a1);
 }
 
-nav .nav-link {
-  background-color: var(--warna-putih);
-  padding: 10px;
-  margin: 2px;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: bold;
+/* tag i */
+.container-a1 i {
+  color: var(--background-b1);
+  text-shadow: 2px 2px 5px var(--color-b1);
 }
 
-/* navbar -sub: overlay */
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: var(--warna-hijau);
-  overflow: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-  box-shadow: 0 -5px 5px #333;
-}
-
-.sidenav a {
-  text-decoration: none;
-  font-size: 25px;
-  color: var(--warna-putih);
-  display: block;
-  transition: 0.3s;
-  text-align: left;
-}
-
-.sidenav a:hover {
-  margin-left: 1rem;
-  color: var(--warna-hijau);
-  text-shadow: 1px 1px 3px var(--warna-putih), -1px -1px 3px var(--warna-putih);
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#navbarNavAltMarkup a {
-  color: var(--warna-hijau);
-}
-
-#navbarNavAltMarkup a:hover {
-  color: var(--warna-putih);
-}
-
-/* JUMBOTRON */
-.jumbotron {
-  padding-top: 6rem;
-  background-color: var(--warna-hijau);
-  text-align: center;
-}
-
-.jumbotron img {
+/* cover */
+#cover img {
+  width: 150px;
   border-radius: 50%;
-  border: var(--warna-putih) solid 4px;
-  width: 200px;
+  margin: 2rem 0 0.3rem 0;
 }
 
-.jumbotron img:hover {
-  box-shadow: 0 0 8px 5px var(--warna-putih);
-  border: 3px solid var(--warna-hijau);
-}
-
-.jumbotron p {
-  font-size: 16px;
-  transition: 1s;
-}
-
-.jumbotron h2,
-.jumbotron p {
-  text-shadow: 1px 1px 1px black;
-}
-
-.jumbotron p:hover {
-  transition: 1s;
-  font-size: 20px;
-}
-
-/* MTQ */
-#MTQ {
-  background-color: var(--warna-putih);
-}
-
-#MTQ h2,
-#MTQ p {
-  color: var(--warna-hijau);
-  text-shadow: 0.2px 0.2px 0.2px black;
-}
-
-#MTQ span {
-  font-weight: bold;
-}
-
-#MTQ .row {
-  margin: 0px 5px 0px 5px;
-}
-
-#MTQ .col-md-5 {
-  border-radius: 10px;
-  padding: 1rem;
-  margin: 15px;
-}
-
-/* syaratPeserta */
-#syaratPeserta {
-  background-color: var(--warna-hijau);
-  color: var(--warna-putih);
-}
-
-#syaratPeserta h2,
-#syaratPeserta h5,
-#syaratPeserta p {
-  text-align: center;
-  line-height: normal;
-}
-
-#syaratPeserta p {
-  background-color: var(--warna-putih);
-  color: var(--warna-hijau);
-  border-radius: 10px;
-  padding: 5px;
-}
-
-/* HADIAH MTQ */
-#hadiahMTQ {
-  background-color: var(--warna-putih);
-}
-
-/* MTQBatuTaba */
-#MTQBatuTaba {
-  background-color: var(--warna-hijau);
-}
-
-#MTQBatuTaba h2 {
-  text-shadow: 1px 1px 1px black;
-}
-
-#MTQBatuTaba .row {
-  margin: 0px 5px 0px 5px;
+/* mtq */
+#mtq {
   text-align: center;
 }
 
-#MTQBatuTaba .col-md-5 {
-  background-color: var(--warna-putih);
-  border-radius: 10px;
-  padding: 1rem;
-  margin: 15px;
-}
-
-#MTQBatuTaba i {
-  text-align: center;
-  font-size: 80px;
-  margin-bottom: 1rem;
-  color: var(--warna-putih);
-}
-
-#MTQBatuTaba i,
-#MTQBatuTaba a,
-#MTQBatuTaba P {
-  text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-#MTQBatuTaba a {
-  box-shadow: 0 0 5px 1px var(--warna-putih);
-}
-
-/* hadiahMTQ */
-#hadiahMTQ h2,
-#hadiahMTQ h5,
-#hadiahMTQ p {
-  text-align: center;
-  color: var(--warna-hijau);
-  text-shadow: 0.2px 0.2px 0.2px black;
-}
-
-/* QnA */
-#QnA {
-  background-color: var(--warna-putih);
-}
-
-#QnA h2,
-#QnA p {
-  color: var(--warna-hijau);
-  text-shadow: 0.2px 0.2px 0.2px black;
-}
-
-#hiddenFlyButton a:hover {
-  background-color: var(--warna-putih);
-  color: var(--warna-hijau);
-  box-shadow: 0 0 2px 1px var(--warna-hijau);
-}
-
-/* Sponsor */
-#sponsor {
-  background-color: var(--warna-hijau);
-  color: var(--warna-putih);
-}
-
-#sponsor h2 {
+/* mtq-batutaba */
+#mtq-batutaba {
   text-align: center;
 }
 
-#sponsor .col {
-  display: flex;
-  justify-content: center;
+#mtq-batutaba i {
+  font-size: 3.5rem;
+  padding-bottom: 10px;
 }
 
+/* sponsor */
 #sponsor img {
   width: 100px;
-  display: inline-block;
-  justify-content: center;
-  margin: 15px;
   border-radius: 50%;
-}
-
-/* FOOTER */
-footer {
-  color: var(--warna-hijau);
-  background-color: var(--warna-putih);
-  text-align: center;
-  padding-bottom: 4rem;
-  /* text-shadow: 0.3px 0.3px 0.3px black; */
-}
-
-footer a {
-  transition: 0.5s;
-  text-decoration: none;
-  color: var(--warna-hijau);
-  font-weight: bold;
-}
-
-footer a:hover {
-  color: var(--warna-putih);
-  text-shadow: 0.5px 0.5px 3px var(--warna-hijau), -0.5px -0.5px 3px var(--warna-hijau);
 }

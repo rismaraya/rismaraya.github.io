@@ -5,9 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
     <!-- AOS: slide animasi -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -16,44 +13,52 @@
 
     <!-- my css -->
     <link rel="stylesheet" href="../style/mtq.css" />
+    <link rel="stylesheet" href="../style/general.css" />
+    <link rel="stylesheet" href="../style/reset.css" />
 
     <title>MTQ 1443H - 2022M | Batu Taba</title>
   </head>
   <body id="home">
-
-
-    <!-- jumbotron -->
-    <section class="jumbotron type1">
-      <div class="row">
-        <div class="col mb-2">
-          <img src="../img/mtq.jpg" />
+    <!-- cover -->
+    <section id="cover">
+      <div class="container-a1">
+        <div class="row">
+          <div class="col">
+            <img src="../img/mtq.jpg" />
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h2 class="display-4">MTQ Batu Taba 1443H</h2>
-          <p></p>
+        <div class="row">
+          <div class="col">
+            <h2>MTQ Batu Taba 1443H</h2>
+          </div>
+          <div class="col">
+            <p></p>
+          </div>
+          <div class="col">
+            <a onclick="tukarWarna(true)">Tukar Warna</a>
+            <a onclick="tukarWarna(false)">Tukar Warna</a>
+          </div>
         </div>
       </div>
     </section>
-    <!-- akhir jumbotron -->
+    <!-- akhir cover -->
 
-    <!-- MTQ -->
-    <section id="MTQ">
-      <div class="container type2">
+    <!-- about MTQ -->
+    <section id="mtq">
+      <div class="container-b1">
         <div class="row">
           <div class="col" data-aos="fade-down" data-aos-delay="250">
             <h2>MTQ</h2>
           </div>
         </div>
-        <div class="row justify-content-evenly">
-          <div class="col-md-5" data-aos="fade-right" data-aos-delay="250">
+        <div class="row">
+          <div class="col-2" data-aos="fade-right" data-aos-delay="250">
             <p>
               <span>Musabaqah Tilawatil Quran </span>(bahasa Arab: مسابقة تلاوة القران, disingkat MTQ) adalah festival keagamaan Islam Indonesia yang bertujuan untuk mengagungkan Al Quran. <br />
               Pada festival ini, peserta berlomba mengaji Al-Qur'an dengan menggunakan Qira'at.
             </p>
           </div>
-          <div class="col-md-5" data-aos="fade-left" data-aos-delay="250">
+          <div class="col-2" data-aos="fade-left" data-aos-delay="250">
             <p>
               <span>Tujuan dan Manfaat MTQ</span> <br />
               (1) Meningkatkan pemahaman, penghayatan dan pengamalanisi kandungan Al-Qur'an. <br />
@@ -66,16 +71,16 @@
     </section>
     <!-- akhir MTQ -->
 
-    <!-- SyaratPeserta -->
-    <section id="syaratPeserta">
-      <div class="container">
+    <!-- syarat-peserta -->
+    <section id="syarat-peserta">
+      <div class="container-a1">
         <div class="row">
           <div class="col" data-aos="fade-down" data-aos-delay="250">
-            <h2>Syarat Peserta MTQ</h2>
+            <h2>Syarat Peserta</h2>
           </div>
         </div>
-        <div class="row justify-content-evenly">
-          <div class="col-md-5" data-aos="fade-left" data-aos-delay="250">
+        <div class="row">
+          <div class="col-3" data-aos="fade-left" data-aos-delay="250">
             <h5>Tahfizd Tingkat Anak-anak Umur</h5>
             <p>
               Maksimal 15 Tahun <br />
@@ -85,7 +90,7 @@
               Keputusan juri mutlak
             </p>
           </div>
-          <div class="col-md-5" data-aos="fade-right" data-aos-delay="250">
+          <div class="col-3" data-aos="fade-right" data-aos-delay="250">
             <h5>Sholat Jenazah Tingkat Umum (Berjama’ah)</h5>
             <p>
               Berasal dari TPA/TPSA/Masjid di Sumatera Barat <br />
@@ -97,14 +102,14 @@
         </div>
       </div>
     </section>
-    <!-- akhir syaratPeserta -->
+    <!-- akhir syarat-peserta -->
 
-    <!-- Hadiah MTQ -->
+    <!-- hadiah -->
     <section id="hadiahMTQ">
-      <div class="container">
+      <div class="container-b1">
         <div class="row">
           <div class="col" data-aos="fade-down" data-aos-delay="250">
-            <h2>Hadiah MTQ</h2>
+            <h2>Hadiah</h2>
           </div>
         </div>
         <div class="row">
@@ -112,122 +117,46 @@
         </div>
       </div>
     </section>
-    <!-- akhir hadiah MTQ -->
+    <!-- akhir hadiah -->
 
-    <!-- MTQBatuTaba -->
-    <section id="MTQBatuTaba">
-      <div class="container type1">
-        <div class="row mb-5">
+    <!-- mtq-batutaba -->
+    <section id="mtq-batutaba">
+      <div class="container-a1">
+        <div class="row">
           <div class="col" data-aos="fade-down">
             <h2>MTQ Batu Taba 1443H / 2022M</h2>
           </div>
         </div>
-        <div class="row justify-content-evenly">
+        <div class="row">
           <!-- surat undangan-->
-          <div class="col-md-4" data-aos="flip-left">
+          <div class="col-4" data-aos="flip-left">
             <i class="fileUndangan"></i>
             <p>
               Undangan<br />
               MTQ
             </p>
-            <a class="btn btn-success alert-e">Download Undangan</a>
+            <a class="alert-e">Download</a>
           </div>
           <!-- map -->
-          <div class="col-md-4" data-aos="zoom-in">
+          <div class="col-4" data-aos="zoom-in">
             <i class="map"></i>
             <p>Mesjid Raya Batu Taba <br />Kec. Batipuh Selatan, Kab.Tanah Datar</p>
-            <a class="btn btn-success" href="https://goo.gl/maps/yctWYa1hdSbHRbZj9" target="_blank">Lihat MAP</a>
+            <a href="https://goo.gl/maps/yctWYa1hdSbHRbZj9" target="_blank">Lihat MAP</a>
           </div>
           <!-- form pendaftaran -->
-          <div class="col-md-4" data-aos="flip-right">
+          <div class="col-4" data-aos="flip-right">
             <i class="daftar"></i>
             <p>Formulir Pendaftaran <br />MTQ</p>
-            <a class="btn btn-success alert-e">Buka Form</a>
+            <a class="alert-e">Buka Form</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- akhir MTQBatuTaba -->
+    <!-- akhir mtq-batutaba -->
 
-    <!-- QnA -->
-    <section id="QnA">
-      <div class="container type2">
-        <div class="row">
-          <div class="col" data-aos="fade-down">
-            <h2>QnA</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <!-- pertanyaan 1 -->
-              <div class="accordion-item" data-aos="zoom-in-up" data-aos-delay="250">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    (1) Jika Nagari kami tidak menerima Undangan, Apakah kami bisa ikut serta ?
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Iya, bisa. Silahkan mengisi formulir pendaftaran ini : <a class="btn btn-success alert-e">Formulir Pendaftaran</a></div>
-                </div>
-              </div>
-
-              <!-- pertanyaa 2 -->
-              <div class="accordion-item" data-aos="zoom-in-up" data-aos-delay="250">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    (2) Apakah ada syarat tertentu untuk dapat menjadi peserta ?
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Ada, Untuk syarat dan ketentuan peserta dapat dilihat di sini : <a class="btn btn-success alert-e">Syarat peserta MTQ</a></div>
-                </div>
-              </div>
-              <!-- pertanyaan 3 -->
-              <div class="accordion-item" data-aos="zoom-in-up" data-aos-delay="250">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    (3) Adakah syarat menjadi pembimbing peserta ?
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">*Informasi belum tersedia</div>
-                </div>
-              </div>
-              <!-- pertanyaan 4 -->
-              <div class="accordion-item" data-aos="zoom-in-up" data-aos-delay="250">
-                <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    (4) Apa saja benifit yang kami dapatkan sebagai peserta dan atau pemenang MTQ ?
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">*informasi belum tersedia</div>
-                </div>
-              </div>
-              <!-- pertanyaan 5 -->
-              <div class="accordion-item" data-aos="zoom-in-up" data-aos-delay="250">
-                <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    (5) Dimana kami dapat melihat pengumuman juara MTQ ?
-                  </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    Saudara/i dapat melihat infonya pada <a class="btn btn-success" href="https://mtqbatutaba.github.io/juara/" target="_blank">Info Juara</a> 1x24 jam setelah diumumkan di Mesjid Raya Batu taba
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- akhir QnA  -->
-
-    <!-- Sponsor -->
+    <!-- sponsor -->
     <section id="sponsor">
-      <div class="container">
+      <div class="container-b1">
         <div class="row">
           <div class="col" data-aos="fade-down">
             <h2>Disponsori Oleh</h2>
@@ -249,19 +178,16 @@
         </div>
       </div>
     </section>
-    <!-- akhir Sponsore -->
+    <!-- akhir sponsor -->
 
     <!-- footer -->
-    <footer id="#footer">
+    <footer id="#footer" class="container-a1">
       <p>Created by <a href="#" target="_blank">Rismaraya</a></p>
     </footer>
     <!-- akhir footer -->
 
     <!-- js folder -->
     <script src="../script/mtq.js"></script>
-
-    <!-- boostrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- AOS: slide animasi -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -276,9 +202,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to('.jumbotron p', { duration: 3, delay: 3.5, text: 'Batu Taba | Batipuh Selatan | Tanah Datar' });
-      gsap.from('.jumbotron img', { delay: 0.5, duration: 2, y: -100, rotateY: 360, opacity: 0, ease: 'bounce' });
-      gsap.from('.jumbotron h2', { delay: 0.5, duration: 3, x: 500, rotateY: 360, opacity: 0, ease: 'back.out' });
+      gsap.to('.cover p', { duration: 3, delay: 3.5, text: 'Batu Taba | Batipuh Selatan | Tanah Datar' });
+      gsap.from('.cover img', { delay: 0.5, duration: 2, y: -100, rotateY: 360, opacity: 0, ease: 'bounce' });
+      gsap.from('.cover h2', { delay: 0.5, duration: 3, x: 500, rotateY: 360, opacity: 0, ease: 'back.out' });
     </script>
 
     <!-- sweeetAlert -->

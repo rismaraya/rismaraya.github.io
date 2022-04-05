@@ -34,3 +34,17 @@ for (let i = 0; i < alertError.length; i++) {
     });
   });
 }
+
+// tukarWarna
+function tukarWarna(isDark) {
+  container1 = document.querySelectorAll('.container-a1');
+  container2 = document.querySelectorAll('.container-b1');
+  if (isDark) {
+    for (let i = 0; i < container1.length; i++) {
+      container1[i].classList.toggle('.container-a1');
+      container1[i].setAttribute('class', 'container-b1');
+      container2[i].classList.toggle('.container-b1');
+      container2[i].setAttribute('class', 'container-a1');
+    }
+  }
+}
