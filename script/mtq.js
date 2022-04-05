@@ -13,8 +13,9 @@ document.querySelector('a.navbar-brand i').classList.add('fa', 'fa-user-circle')
 
 const iconOverlay = document.querySelectorAll('#mySidenav i');
 iconOverlay[0].classList.add('fa', 'fa-times-circle-o');
-iconOverlay[1].classList.add('fa', 'fa-whatsapp');
-iconOverlay[2].classList.add('fa', 'fa-telegram');
+for (let i = 1; i < iconOverlay.length; i++){
+  iconOverlay[i].classList.add('fa', 'fa-whatsapp');
+}
 
 const iconNavbar = document.querySelectorAll('a.nav-link');
 iconNavbar[0].classList.add('fa', 'fa-home');
