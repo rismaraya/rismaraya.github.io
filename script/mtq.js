@@ -35,14 +35,41 @@ for (let i = 0; i < alertError.length; i++) {
   });
 }
 
-// tukarWarna
-function tukarWarna(isDark) {
+// tukarWarna dan ubah warna
+function tukarWarna() {
   a1 = document.querySelectorAll('.container-a1');
   b1 = document.querySelectorAll('.container-b1');
-  if (isDark) {
-    for (let i = 0; i < a1.length; i++) {
-      a1[i].setAttribute('class', 'container-b1');
-      b1[i].setAttribute('class', 'container-a1');
+  a2 = document.querySelectorAll('.container-a2');
+  b2 = document.querySelectorAll('.container-b2');
+  for (let i = 0; i < a1.length; i++) {
+    a1[i].setAttribute('class', 'container-b1');
+    for (let j = 0; j < b1.length; j++) {
+      b1[j].setAttribute('class', 'container-a1');
+    }
+  }
+  for (let i = 0; i < a2.length; i++) {
+    a2[i].setAttribute('class', 'container-b2');
+    for (let j = 0; j < b2.length; j++) {
+      b2[j].setAttribute('class', 'container-a2');
+    }
+  }
+}
+
+function ubahWarna() {
+  a1 = document.querySelectorAll('.container-a1');
+  b1 = document.querySelectorAll('.container-b1');
+  a2 = document.querySelectorAll('.container-a2');
+  b2 = document.querySelectorAll('.container-b2');
+  for (let i = 0; i < a1.length; i++) {
+    a1[i].setAttribute('class', 'container-a2');
+    for (let j = 0; j < b1.length; j++) {
+      b1[j].setAttribute('class', 'container-b2');
+    }
+  }
+  for (let i = 0; i < a2.length; i++) {
+    a2[i].setAttribute('class', 'container-a1');
+    for (let j = 0; j < b2.length; j++) {
+      b2[j].setAttribute('class', 'container-b1');
     }
   }
 }

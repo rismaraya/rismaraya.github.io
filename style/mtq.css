@@ -133,3 +133,14 @@
   width: 100px;
   border-radius: 50%;
 }
+
+/* footer */
+footer {
+  text-align: center;
+  margin: 10px;
+}
+
+footer a,
+footer p{
+  padding: 7px;
+}

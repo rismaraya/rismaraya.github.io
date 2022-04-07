@@ -35,7 +35,7 @@ div h3 {font-size: 24px; font-weight: 700; padding-bottom: 7px;}
 div h2 {font-size: 28px; font-weight: 800; padding-bottom: 7px;}
 div h1 {font-size: 32px; font-weight: 900; padding-bottom: 7px;}
 
-div a {
+div a, a {
 	cursor: pointer;
     text-decoration: none;
     color: inherit;
