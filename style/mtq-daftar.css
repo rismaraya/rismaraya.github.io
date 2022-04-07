@@ -1,7 +1,21 @@
+body {
+  margin-bottom: 5rem;
+  background-color: #eaeaea;
+}
 .container {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
+}
+
+span {
+  font-weight: 800;
+  color: blueviolet;
+}
+
+.container form input,
+.container form select {
+  background-color: rgba(221, 247, 247, 0.459);
 }

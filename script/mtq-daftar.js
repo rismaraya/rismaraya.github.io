@@ -10,7 +10,7 @@ function alert() {
   Swal.fire({
     icon: 'success',
     title: 'Data berhasil dikirim !',
-    text: 'Silahkan cek Email anda dan lengkapi syarat pendaftaran',
+    text: 'Terima kasih telah mendaftar. Ditunggu di Masjid Raya Batu Taba Pada pada hari Acara.',
   });
 }
 

@@ -16,30 +16,41 @@
   </head>
   <body>
     <!-- form pendaftaran -->
-    <section id="habibieForm">
+    <section id="form-pendaftaran">
       <div class="container">
         <div class="row mb-3">
           <div class="col">
-            <h2>Formulir Pendaftaran Nagari</h2>
+            <h2>
+              Formulir Pendaftaran <br />
+              Peserta MTQ
+            </h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show my-alert" role="alert"><strong>Notice:</strong> Harap mengisi email aktif dengan benar!</div>
+            <div class="alert alert-success alert-dismissible fade show my-alert" role="alert"><strong>Notice:</strong> Harap mengisi <span> email aktif dengan benar </span>bila ingin mendapatkan e-sertifikat peserta!</div>
             <form action="" name="pendataran-MTQ">
               <div class="mb-3">
-                <label for="nagari" class="form-label">Nama Nagari</label>
-                <input type="text" class="form-control" id="nagari" name="Nama Nagari" placeholder="Nagari Batu Taba" />
+                <label for="nama" class="form-label">Nama Peserta</label>
+                <input type="text" class="form-control" id="nama" name="Nama Peserta" placeholder="Ketik Nama Peserta disini...!" />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email Lengkap</label>
-                <input type="email" class="form-control" id="email" name="Email Address" placeholder="mtqbatutaba@gmail.com" />
+                <label class="mb-2" for="cabang-lomba">Pilih Cabang Lomba</label>
+                <select class="form-select" id="cabang-lomba" aria-label="Floating label select example">
+                  <option selected>Pilih disini...!</option>
+                  <option value="Tahfizd">(1) Tahfizd</option>
+                  <option value="Sholat Jenazah">(2) Sholat Jenazah</option>
+                </select>
               </div>
               <div class="mb-3">
-                <label for="pembimbing" class="form-label">Pembimbing</label>
-                <input type="text" class="form-control" id="pembimbing" name="Pembimbing" placeholder="Muhammad Fulan" />
+                <label for="email" class="form-label">Email Peserta / Pembimbing</label>
+                <input type="email" class="form-control" id="email" name="Email" placeholder="Ketik Email disini...!" />
               </div>
-              <button id="submit" type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+              <div class="mb-3">
+                <label for="pembimbing" class="form-label">No.Telp Peserta / Pembimbing</label>
+                <input type="text" class="form-control" id="pembimbing" name="Pembimbing" placeholder="Ketik No.Telp Disini...!" />
+              </div>
+              <button id="submit" type="submit" class="btn btn-primary btn-kirim">Submit</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
@@ -55,7 +66,7 @@
     <script src="../../script/mtq-daftar.js"></script>
 
     <!-- sweeetAlert -->
-    <script src="../script/sweetalert/sweetalert2.all.min.js"></script>
+    <script src="../../script/sweetalert/sweetalert2.all.min.js"></script>
 
     <!-- boostrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
