@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- formulir -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../../style/mtq-daftar.css" />
+
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body>
+    <!-- form pendaftaran -->
+    <section id="form-pendaftaran">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col">
+            <h2>
+              Formulir Pendaftaran <br />
+              Lomba Sholat Jenazah
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show my-alert" role="alert"><strong>Notice:</strong> Harap mengisi <span> email aktif dengan benar </span>bila ingin mendapatkan e-sertifikat peserta!</div>
+            <form action="" name="pendataran-MTQ">
+              <div class="mb-3">
+                <label for="nagari" class="form-label">Asal Nagari/TPA/TPSA</label>
+                <input type="text" class="form-control" id="nagari" name="peserta1" placeholder="Ketik nama nagari/TPA/TPSA disini...!" />
+              </div>
+              <div class="mb-3">
+                <label for="peserta1" class="form-label">Peserta 1</label>
+                <input type="text" class="form-control" id="peserta1" name="peserta1" placeholder="Ketik nama lengkap peserta 1...!" />
+              </div>
+              <div class="mb-3">
+                <label for="peserta2" class="form-label">Peserta 2</label>
+                <input type="text" class="form-control" id="peserta2" name="peserta2" placeholder="Ketik nama lengkap peserta 2...!" />
+              </div>
+              <div class="mb-3">
+                <label for="peserta3" class="form-label">Peserta 3</label>
+                <input type="text" class="form-control" id="peserta3" name="peserta3" placeholder="Ketik nama lengkap peserta 3...!" />
+              </div>
+              <div class="mb-3">
+                <label for="peserta4" class="form-label">Peserta 4</label>
+                <input type="text" class="form-control" id="peserta4" name="peserta4" placeholder="Ketik nama lengkap peserta 4...!" />
+              </div>
+              <div class="mb-3">
+                <label for="peserta5" class="form-label">Peserta 5</label>
+                <input type="text" class="form-control" id="peserta5" name="peserta5" placeholder="Ketik nama lengkap peserta 5...!" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Peserta / Pembimbing</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="cukup isi salah satu alamat email...!" />
+              </div>
+              <div class="mb-3">
+                <label for="pembimbing" class="form-label">No.Telp Peserta / Pembimbing</label>
+                <input type="text" class="form-control" id="pembimbing" name="pembimbing" placeholder="cukup isi salah satu no.Telp...!" />
+              </div>
+              <button id="submit" type="submit" class="btn btn-primary btn-kirim">Submit</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir form pendaftaran -->
+
+        <!-- kembali -->
+        <a href="https://rismaraya.github.io/MTQ/" class="btn btn-dark"> Kembali ke halaman utama !</a>
+        <!-- akhir kembali -->
+
+    <!-- my js -->
+    <script src="../../script/mtq-daftar2.js"></script>
+
+    <!-- sweeetAlert -->
+    <script src="../../script/sweetalert/sweetalert2.all.min.js"></script>
+
+    <!-- boostrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- form -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxqKtMtHwI51Dy6Fo2Pp4DfEazMDl4fAWgpLwT1fnbA5swabVUaQIz9qMT8JdbA407Y/exec';
+      // form MSQ
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            alert();
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>

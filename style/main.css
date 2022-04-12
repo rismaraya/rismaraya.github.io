@@ -1,3 +1,8 @@
+:root {
+  --main-color: #198754;
+  --second-color: #f3f5f4;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -66,4 +71,14 @@ h2 {
 .jumbotron p:hover {
   transition: 1s;
   font-size: 20px;
+}
+
+/* dokumentasi */
+#dokumentasi {
+  background-color: var(--main-color);
+}
+
+section .container img {
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 5px var(--second-color);
 }

@@ -22,34 +22,37 @@
           <div class="col">
             <h2>
               Formulir Pendaftaran <br />
-              Peserta MTQ
+              Lomba MSQ
             </h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
           <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show my-alert" role="alert"><strong>Notice:</strong> Harap mengisi <span> email aktif dengan benar </span>bila ingin mendapatkan e-sertifikat peserta!</div>
             <form action="" name="pendataran-MTQ">
               <div class="mb-3">
-                <label for="nama" class="form-label">Nama Peserta</label>
-                <input type="text" class="form-control" id="nama" name="Nama Peserta" placeholder="Ketik Nama Peserta disini...!" />
+                <label for="nagari" class="form-label">Asal Nagari/TPA/TPSA</label>
+                <input type="text" class="form-control" id="nagari" name="peserta1" placeholder="Ketik nama nagari/TPA/TPSA disini...!" />
               </div>
               <div class="mb-3">
-                <label class="mb-2" for="cabang-lomba">Cabang Lomba</label>
-                <select class="form-select" id="cabang-lomba" aria-label="Floating label select example">
-                  <option selected>Pilih disini...!</option>
-                  <option value="Tahfizd">(1) Tahfizd</option>
-                  <option value="Sholat Jenazah">(2) Sholat Jenazah</option>
-                  <option value="Sholat Jenazah">(3) MSQ</option>
-                </select>
+                <label for="peserta1" class="form-label">Peserta 1</label>
+                <input type="text" class="form-control" id="peserta1" name="peserta1" placeholder="Ketik nama lengkap peserta 1...!" />
+              </div>
+              <div class="mb-3">
+                <label for="peserta2" class="form-label">Peserta 2</label>
+                <input type="text" class="form-control" id="peserta2" name="peserta2" placeholder="Ketik nama lengkap peserta 2...!" />
+              </div>
+              <div class="mb-3">
+                <label for="peserta3" class="form-label">Peserta 3</label>
+                <input type="text" class="form-control" id="peserta3" name="peserta3" placeholder="Ketik nama lengkap peserta 3...!" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email Peserta / Pembimbing</label>
-                <input type="email" class="form-control" id="email" name="Email" placeholder="Ketik Email disini...!" />
+                <input type="email" class="form-control" id="email" name="email" placeholder="cukup isi salah satu alamat email...!" />
               </div>
               <div class="mb-3">
                 <label for="pembimbing" class="form-label">No.Telp Peserta / Pembimbing</label>
-                <input type="text" class="form-control" id="pembimbing" name="Pembimbing" placeholder="Ketik No.Telp Disini...!" />
+                <input type="text" class="form-control" id="pembimbing" name="pembimbing" placeholder="cukup isi salah satu no.Telp...!" />
               </div>
               <button id="submit" type="submit" class="btn btn-primary btn-kirim">Submit</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
@@ -63,8 +66,12 @@
     </section>
     <!-- akhir form pendaftaran -->
 
+    <!-- kembali -->
+    <a href="https://rismaraya.github.io/MTQ/" class="btn btn-dark"> Kembali ke halaman utama !</a>
+    <!-- akhir kembali -->
+
     <!-- my js -->
-    <script src="../../script/mtq-daftar.js"></script>
+    <script src="../../script/mtq-daftar1.js"></script>
 
     <!-- sweeetAlert -->
     <script src="../../script/sweetalert/sweetalert2.all.min.js"></script>
